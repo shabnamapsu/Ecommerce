@@ -58,7 +58,7 @@ function Shops() {
               <img
                 src={
                   shop.image
-                    ? `http://localhost:8000/public/temp/${shop.image}`
+                    ? `https://ecommerce-3-nee8.onrender.com/public/temp/${shop.image}`
                     : "https://picsum.photos/250"
                 }
                 alt={shop.name}

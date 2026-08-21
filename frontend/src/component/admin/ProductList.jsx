@@ -103,7 +103,7 @@ function ProductList() {
 
               <div className="p-4 border-b">
                 <img
-                  src={`http://localhost:8000/public/temp/${item.image}`}
+                  src={`https://ecommerce-3-nee8.onrender.com/public/temp/${item.image}`}
                   alt={item.title}
                   className="w-full h-60 object-cover rounded-xl"
                 />

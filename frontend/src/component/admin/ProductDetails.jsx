@@ -360,7 +360,7 @@ function ProductDetails() {
   // =========================
 
   const imageUrl =
-    `http://localhost:8000/public/temp/${product.image}`;
+    `https://ecommerce-3-nee8.onrender.com/public/temp/${product.image}`;
 
   // =========================
   // TOTAL PRICE

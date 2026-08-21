@@ -41,7 +41,7 @@ function UserSlider() {
       return image;
     }
 
-    return `http://localhost:8000/public/temp/${image}`;
+    return `https://ecommerce-3-nee8.onrender.com/public/temp/${image}`;
   };
 
   return (

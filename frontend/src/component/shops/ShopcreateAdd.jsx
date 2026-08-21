@@ -264,7 +264,7 @@ function ShopcreateAdd() {
               </p>
 
               <img
-                src={`http://localhost:8000/public/temp/${oldImage}`}
+                src={`https://ecommerce-3-nee8.onrender.com/public/temp/${oldImage}`}
                 alt="Current Shop"
                 className="w-40 h-40 rounded-xl object-cover border"
               />

@@ -83,7 +83,7 @@ function EditProduct() {
               src={
                 product.image?.startsWith("http")
                   ? product.image
-                  : `http://localhost:8000/public/temp/${product.image}`
+                  : `https://ecommerce-3-nee8.onrender.com/public/temp/${product.image}`
               }
               alt={product.title}
               className="w-full max-w-md h-[450px] object-contain"

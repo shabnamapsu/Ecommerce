@@ -182,7 +182,7 @@ function Products() {
       return "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800";
     }
 
-    return `http://localhost:8000/public/temp/${image}`;
+    return `https://ecommerce-3-nee8.onrender.com/public/temp/${image}`;
   };
 
   // =====================================

@@ -79,7 +79,7 @@ function ShopList() {
               <img
                 src={
                   shop.image
-                    ? `http://localhost:8000/public/temp/${shop.image}`
+                    ? `https://ecommerce-3-nee8.onrender.com/public/temp/${shop.image}`
                     : "/shop-default.png"
                 }
                 alt={shop.name}

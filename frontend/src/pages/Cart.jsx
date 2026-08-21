@@ -207,7 +207,7 @@ function Cart() {
       });
 
       const response = await api.post(
-        "https://ecommerce-2-0n96.onrender.com/cart/update",
+        "/api/cart/update",
         {
           userId,
           productId,
@@ -254,7 +254,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await api.post(
-        "https://ecommerce-2-0n96.onrender.com/cart/remove",
+        "/api/cart/remove",
         {
           userId,
           productId,
@@ -308,7 +308,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await api.delete(
-        `https://ecommerce-2-0n96.onrender.com/cart/clear/${userId}`,
+        `/api/cart/clear/${userId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -501,7 +501,7 @@ function Cart() {
                     {/* IMAGE */}
 
                     <img
-                      src={`http://localhost:8000/public/temp/${product.image}`}
+                      src={`https://ecommerce-3-nee8.onrender.com/public/temp/${product.image}`}
                       alt={product.title}
                       className="w-28 h-28 object-cover rounded-xl"
                       onError={(e) => {

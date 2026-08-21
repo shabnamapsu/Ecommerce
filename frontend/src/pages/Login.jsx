@@ -42,7 +42,7 @@ function Login() {
     setMsg("");
 
     try {
-      const response = await api.post("https://ecommerce-2-0n96.onrender.com/auth/login", data);
+      const response = await api.post("/auth/login", data);
 
       console.log("Login Response:", response.data);
 

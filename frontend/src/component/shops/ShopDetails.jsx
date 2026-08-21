@@ -79,7 +79,7 @@ function ShopDetails() {
         <img
           src={
             shop.image
-              ? `http://localhost:8000/public/temp/${shop.image}`
+              ? `https://ecommerce-3-nee8.onrender.com/public/temp/${shop.image}`
               : "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200"
           }
           alt={shop.name}
@@ -173,7 +173,7 @@ function ShopDetails() {
                 <img
                   src={
                     item.image
-                      ? `http://localhost:8000/public/temp/${item.image}`
+                      ? `https://ecommerce-3-nee8.onrender.com/public/temp/${item.image}`
                       : "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=400"
                   }
                   alt={item.name}

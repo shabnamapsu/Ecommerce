@@ -122,7 +122,7 @@ function WishList() {
                 item.image
                   ? item.image.startsWith("http")
                     ? item.image
-                    : `http://localhost:8000/public/temp/${item.image}`
+                    : `https://ecommerce-3-nee8.onrender.com/public/temp/${item.image}`
                   : "https://dummyimage.com/400x250/e5e7eb/6b7280&text=No+Image"
               }
               alt={item.title}

@@ -291,7 +291,7 @@ const getWishlist = async () => {
             >
 
               <img
-                src={`http://localhost:8000/public/temp/${item.image}`}
+                src={`https://ecommerce-3-nee8.onrender.com/public/temp/${item.image}`}
                 alt={item.title}
                 className="w-full h-64 object-cover"
               />
