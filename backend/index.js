@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://ecommerce-2-0n96.onrender.com",
+    origin: "https://ecommerce-3-nee8.onrender.com",
     credentials: true,
   })
 );
