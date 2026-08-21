@@ -50,6 +50,8 @@ function Login() {
 
       console.log("Login User:", user);
       console.log("Login Role:", user?.role);
+       console.log("API BASE URL:", api.defaults.baseURL);
+  console.log("LOGIN URL:", `${api.defaults.baseURL}/auth/login`);
 
       // ============================
       // CHECK RESPONSE
