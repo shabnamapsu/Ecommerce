@@ -32,7 +32,7 @@ function AddProduct() {
 
   const getProduct = async () => {
     try {
-      const response = await api.get(`https://ecommerce-2-0n96.onrender.com/products/${id}`);
+      const response = await api.get(`/products/${id}`);
 
       console.log("Product Response:", response.data);
 
@@ -122,7 +122,7 @@ function AddProduct() {
 
       if (isEdit) {
         response = await api.put(
-          `https://ecommerce-2-0n96.onrender.com/products/update/${id}`,
+          `/products/update/${id}`,
           formData
         );
       }
@@ -140,7 +140,7 @@ function AddProduct() {
         }
 
         response = await api.post(
-          "https://ecommerce-2-0n96.onrender.com/products/create",
+          "/products/create",
           formData
         );
       }

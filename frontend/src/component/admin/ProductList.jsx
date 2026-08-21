@@ -13,7 +13,7 @@ function ProductList() {
 
   const addToCart = async (id) => {
     try {
-      await api.post("https://ecommerce-2-0n96.onrender.com/cart/add", {
+      await api.post("/cart/add", {
         productId: id,
         quantity: 1,
       });
@@ -29,7 +29,7 @@ function ProductList() {
 
   const getProducts = async () => {
     try {
-      const { data } = await api.get("https://ecommerce-2-0n96.onrender.com/products");
+      const { data } = await api.get("/products");
       setProducts(data.products);
     } catch (error) {
       console.log(error);
@@ -58,7 +58,7 @@ function ProductList() {
     if (!confirmDelete) return;
 
     try {
-      const { data } = await api.delete(`https://ecommerce-2-0n96.onrender.com/products/delete/${id}`);
+      const { data } = await api.delete(`/products/delete/${id}`);
       alert(data.message);
       getProducts();
     } catch (error) {
@@ -71,7 +71,7 @@ function ProductList() {
   // =============================
 
   const editHandler = (id) => {
-    navigate(`https://ecommerce-2-0n96.onrender.com/add-product/${id}`);
+    navigate(`/add-product/${id}`);
   };
 
   return (
