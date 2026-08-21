@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import api from "../../api/Axios";
+import api from "../../api/axios";
 
 function ShopcreateAdd() {
 

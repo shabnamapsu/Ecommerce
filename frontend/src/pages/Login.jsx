@@ -6,7 +6,7 @@ import {
   FaEye,
   FaEyeSlash,
 } from "react-icons/fa";
-import api from "../api/Axios";
+import api from "../api/axios";
 
 function Login() {
   const navigate = useNavigate();

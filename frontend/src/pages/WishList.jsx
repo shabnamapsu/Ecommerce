@@ -5,7 +5,7 @@ import {
   FaTrash,
   FaStar,
 } from "react-icons/fa";
-import api from "../api/Axios";
+import api from "../api/axios";
 
 function WishList() {
   const [wishlist, setWishlist] = useState([]);

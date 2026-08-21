@@ -9,7 +9,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
-import api from "../../api/Axios";
+import api from "../../api/axios";
 
 function ShopDetails() {
   const { id } = useParams();

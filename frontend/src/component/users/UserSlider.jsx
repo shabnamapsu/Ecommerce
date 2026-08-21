@@ -13,7 +13,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import api from "../../api/Axios";
+import api from "../../api/axios";
 
 function UserSlider() {
   const [shops, setShops] = useState([]);

@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 
 import { Link, useNavigate } from "react-router-dom";
-import api from "../../api/Axios";
+import api from "../../api/axios";
 
 function Navbaar() {
   const navigate = useNavigate();

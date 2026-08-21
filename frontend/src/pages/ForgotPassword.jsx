@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoArrowBack } from "react-icons/io5";
 // import { ClipLoader } from "react-spinners";
 import { useNavigate } from "react-router-dom";
-import api from "../api/Axios";
+import api from "../api/axios";
 
 function ForgotPassword() {
   const [step, setStep] = useState(1);

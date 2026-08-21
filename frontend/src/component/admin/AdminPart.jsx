@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import api from "../../api/Axios";
+import api from "../../api/axios";
 import { FaArrowDown, FaHeart, FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 

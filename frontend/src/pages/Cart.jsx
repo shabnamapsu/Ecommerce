@@ -7,7 +7,7 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import api from "../api/Axios";
+import api from "../api/axios";
 
 function Cart() {
   const navigate = useNavigate();

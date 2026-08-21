@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import api from "../../api/Axios";
+import api from "../../api/axios";
 import { FaStore, FaMapMarkerAlt, FaEdit, FaTrash } from "react-icons/fa";
 
 function ShopList() {
