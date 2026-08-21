@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import path from "path";
+import { fileURLToPath } from "url";
 
 import { DBconnection } from "./config/db.js";
 
@@ -76,11 +77,11 @@ app.use("/api/shop", shopRouter);
 // =====================================================
 // FRONTEND
 // =====================================================
-
-const _dirname = path.resolve();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const frontendPath = path.join(
-  _dirname,
+  __dirname,
   "../frontend/dist"
 );
 
