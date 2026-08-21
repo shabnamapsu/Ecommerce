@@ -60,7 +60,7 @@ function AdminPart() {
 
 const getWishlist = async () => {
   try {
-    const { data } = await api.get(`/wishlist/${user._id}`);
+    const { data } = await api.get(`https://ecommerce-2-0n96.onrender.com/wishlist/${user._id}`);
 
     const products = data?.wishlist?.products || [];
 
@@ -86,7 +86,7 @@ const getWishlist = async () => {
 
     try {
 
-     const { data } = await api.get(`/rating/${user._id}`);
+     const { data } = await api.get(`https://ecommerce-2-0n96.onrender.com/rating/${user._id}`);
 
   
 
@@ -116,7 +116,7 @@ const getWishlist = async () => {
       return;
     }
 
-    const { data } = await api.post("/wishlist/add", {
+    const { data } = await api.post("https://ecommerce-2-0n96.onrender.com/wishlist/add", {
       userId: user._id,
       productId,
     });
@@ -156,7 +156,7 @@ const getWishlist = async () => {
       // Same star clicked again
       if (ratings[productId] === star) {
 
-        await api.delete("/rating/delete", {
+        await api.delete("https://ecommerce-2-0n96.onrender.com/rating/delete", {
           data: {
             userId: user._id,
             productId,
@@ -173,7 +173,7 @@ const getWishlist = async () => {
 
       // Add / Update Rating
 
-      await api.post("/rating/add", {
+      await api.post("https://ecommerce-2-0n96.onrender.com/rating/add", {
 
         userId: user._id,
 

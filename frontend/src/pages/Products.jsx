@@ -29,7 +29,7 @@ function Products() {
     try {
       setLoading(true);
 
-      const { data } = await api.get("/products");
+      const { data } = await api.get("https://ecommerce-2-0n96.onrender.com/products");
 
       console.log("PRODUCT RESPONSE:", data);
 
@@ -67,7 +67,7 @@ function Products() {
       }
 
       await api.post(
-        "/cart/add",
+        "https://ecommerce-2-0n96.onrender.com/cart/add",
         {
           userId,
           productId: id,
@@ -112,7 +112,7 @@ function Products() {
       // Change this endpoint if your backend
       // wishlist route has a different name.
       await api.post(
-        "/wishlist/add",
+        "https://ecommerce-2-0n96.onrender.com/wishlist/add",
         {
           productId: id,
         },

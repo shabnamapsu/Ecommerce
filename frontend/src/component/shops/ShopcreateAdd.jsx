@@ -39,7 +39,7 @@ function ShopcreateAdd() {
 
     try {
 
-      const { data } = await api.get(`/shop/${id}`);
+      const { data } = await api.get(`https://ecommerce-2-0n96.onrender.com/shop/${id}`);
 
       const shopData = data.shop;
 
@@ -127,7 +127,7 @@ function ShopcreateAdd() {
       if (!isEditMode) {
 
         res = await api.post(
-          "/shop/create",
+          "https://ecommerce-2-0n96.onrender.com/shop/create",
           formData
         );
 
@@ -142,7 +142,7 @@ function ShopcreateAdd() {
         formData.append("id", id);
 
         res = await api.put(
-          "/shop/update",
+          "https://ecommerce-2-0n96.onrender.com/shop/update",
           formData
         );
 
@@ -151,7 +151,7 @@ function ShopcreateAdd() {
       alert(res.data.message);
 
       // Go back to shop list
-      navigate("/shops");
+      navigate("https://ecommerce-2-0n96.onrender.com/shops");
 
     } catch (error) {
 

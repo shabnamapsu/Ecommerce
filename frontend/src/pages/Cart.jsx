@@ -207,7 +207,7 @@ function Cart() {
       });
 
       const response = await api.post(
-        "/cart/update",
+        "https://ecommerce-2-0n96.onrender.com/cart/update",
         {
           userId,
           productId,
@@ -254,7 +254,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await api.post(
-        "/cart/remove",
+        "https://ecommerce-2-0n96.onrender.com/cart/remove",
         {
           userId,
           productId,
@@ -308,7 +308,7 @@ function Cart() {
       const token = localStorage.getItem("token");
 
       const response = await api.delete(
-        `/cart/clear/${userId}`,
+        `https://ecommerce-2-0n96.onrender.com/cart/clear/${userId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
